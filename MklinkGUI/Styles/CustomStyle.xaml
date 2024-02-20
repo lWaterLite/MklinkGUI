@@ -1,0 +1,27 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ft="clr-namespace:FTCustomControlLibrary;assembly=FTCustomControlLibrary">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="GlobalStyle.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+    
+    <Style x:Key="LinkModeSwitcher" TargetType="{x:Type ft:Switcher}">
+        <Setter Property="Height" Value="28" />
+        <Setter Property="Width" Value="76" />
+        <Setter Property="BorderBrush" Value="#5c5c5c" />
+        <Setter Property="DisableInsideColor" Value="#5c5c5c" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="ButtonColor" Value="White" />
+    </Style>
+    
+    <Style x:Key="PathTextBorder" TargetType="{x:Type Border}">
+        <Setter Property="Background" Value="#343434" />
+        <Setter Property="Padding" Value="12 6" />
+        <Setter Property="BorderBrush" Value="#6a6a6a" />
+        <Setter Property="BorderThickness" Value="2" />
+        <Setter Property="CornerRadius" Value="4" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+    </Style>
+</ResourceDictionary>
