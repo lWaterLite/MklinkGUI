@@ -2,34 +2,26 @@
 using System.IO;
 using System.Text;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using Color = System.Drawing.Color;
 using OpenFileDialog = Microsoft.Win32.OpenFileDialog;
 using FolderBrowserDialog = System.Windows.Forms.FolderBrowserDialog;
-using DialogResult = System.Windows.Forms.DialogResult;
 
 namespace MklinkGUI;
 
 /// <summary>
-/// Interaction logic for MainWindow.xaml
+///     Interaction logic for MainWindow.xaml
 /// </summary>
-public partial class MainWindow : Window
+public partial class MainWindow
 {
     private readonly MainWindowViewModel _mainWindowViewModel;
-    
+
     public MainWindow()
     {
         InitializeComponent();
 
         _mainWindowViewModel = (DataContext as MainWindowViewModel)!;
-        
+
         CommandBindings.Add(new CommandBinding(SystemCommands.CloseWindowCommand,
             (_, _) => SystemCommands.CloseWindow(this)));
         CommandBindings.Add(new CommandBinding(SystemCommands.MinimizeWindowCommand,

@@ -4,7 +4,7 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="GlobalStyle.xaml" />
     </ResourceDictionary.MergedDictionaries>
-    
+
     <Style x:Key="LinkModeSwitcher" TargetType="{x:Type ft:Switcher}">
         <Setter Property="Height" Value="28" />
         <Setter Property="Width" Value="76" />
@@ -14,7 +14,7 @@
         <Setter Property="Foreground" Value="White" />
         <Setter Property="ButtonColor" Value="White" />
     </Style>
-    
+
     <Style x:Key="PathTextBorder" TargetType="{x:Type Border}">
         <Setter Property="Background" Value="#343434" />
         <Setter Property="Padding" Value="12 6" />

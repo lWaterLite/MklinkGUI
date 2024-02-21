@@ -3,10 +3,10 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="GlobalStyle.xaml" />
     </ResourceDictionary.MergedDictionaries>
-    
+
     <SolidColorBrush x:Key="WindowChromeCloseButtonMouseOverBackgroundBrush" Color="#e81123" />
     <SolidColorBrush x:Key="WindowChromeMinimizeButtonMouseOverBackgroundBrush" Color="#454545" />
-    
+
     <Style x:Key="WindowChromeCloseButton" TargetType="{x:Type Button}">
         <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         <Setter Property="WindowChrome.IsHitTestVisibleInChrome" Value="True" />
@@ -16,20 +16,22 @@
                     <Border x:Name="Border" Background="Transparent" Padding="12 0">
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                     </Border>
-                    
+
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="Border" Property="Background" Value="{StaticResource WindowChromeCloseButtonMouseOverBackgroundBrush}" />
+                            <Setter TargetName="Border" Property="Background"
+                                    Value="{StaticResource WindowChromeCloseButtonMouseOverBackgroundBrush}" />
                         </Trigger>
                         <Trigger Property="IsPressed" Value="True">
-                            <Setter TargetName="Border" Property="Background" Value="{StaticResource WindowChromeCloseButtonMouseOverBackgroundBrush}" />
+                            <Setter TargetName="Border" Property="Background"
+                                    Value="{StaticResource WindowChromeCloseButtonMouseOverBackgroundBrush}" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
     </Style>
-    
+
     <Style x:Key="WindowChromeMinimizeButton" TargetType="{x:Type Button}">
         <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         <Setter Property="WindowChrome.IsHitTestVisibleInChrome" Value="True" />
@@ -39,20 +41,22 @@
                     <Border x:Name="Border" Background="Transparent" Padding="12 0">
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                     </Border>
-                    
+
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="Border" Property="Background" Value="{StaticResource WindowChromeMinimizeButtonMouseOverBackgroundBrush}" />
+                            <Setter TargetName="Border" Property="Background"
+                                    Value="{StaticResource WindowChromeMinimizeButtonMouseOverBackgroundBrush}" />
                         </Trigger>
                         <Trigger Property="IsPressed" Value="True">
-                            <Setter TargetName="Border" Property="Background" Value="{StaticResource WindowChromeMinimizeButtonMouseOverBackgroundBrush}" />
+                            <Setter TargetName="Border" Property="Background"
+                                    Value="{StaticResource WindowChromeMinimizeButtonMouseOverBackgroundBrush}" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
     </Style>
-    
+
     <Style x:Key="PathSelectButton" TargetType="{x:Type Button}">
         <Setter Property="OverridesDefaultStyle" Value="True" />
         <Setter Property="Foreground" Value="White" />
@@ -61,10 +65,11 @@
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border x:Name="Border" Background="Transparent" CornerRadius="4" Padding="8 0"
                             BorderBrush="#999999" BorderThickness="1">
-                        <TextBlock x:Name="TextBlock" Foreground="{TemplateBinding Foreground}" Text="{TemplateBinding Content}"
+                        <TextBlock x:Name="TextBlock" Foreground="{TemplateBinding Foreground}"
+                                   Text="{TemplateBinding Content}"
                                    FontFamily="{StaticResource IconFont}" FontSize="16"
                                    TextAlignment="Center"
-                                   VerticalAlignment="Center"/>
+                                   VerticalAlignment="Center" />
                     </Border>
 
                     <ControlTemplate.Triggers>
@@ -78,7 +83,7 @@
             </Setter.Value>
         </Setter>
     </Style>
-    
+
     <Style x:Key="ExecuteButton" TargetType="{x:Type Button}">
         <Setter Property="OverridesDefaultStyle" Value="True" />
         <Setter Property="Foreground" Value="White" />
@@ -86,16 +91,16 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
-                    <Border x:Name="Border" Background="#2E2E2E" CornerRadius="4" 
+                    <Border x:Name="Border" Background="#2E2E2E" CornerRadius="4"
                             Padding="8" BorderBrush="#999999" BorderThickness="1">
-                        <TextBlock x:Name="TextBlock" 
+                        <TextBlock x:Name="TextBlock"
                                    Foreground="{TemplateBinding Foreground}"
                                    Text="{TemplateBinding Content}"
                                    FontSize="{TemplateBinding FontSize}"
                                    TextAlignment="Center"
                                    VerticalAlignment="Center" />
                     </Border>
-                    
+
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
                             <Setter TargetName="Border" Property="Background" Value="#383838" />

@@ -1,7 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Globalization;
 using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Media;
 using Brush = System.Windows.Media.Brush;
 
@@ -66,7 +65,7 @@ public class LinkModeToHintStringConverter : IValueConverter
     }
 }
 
-public class MainWindowViewModel: INotifyPropertyChanged
+public class MainWindowViewModel : INotifyPropertyChanged
 {
     #region PrivateVariable
 
@@ -79,7 +78,7 @@ public class MainWindowViewModel: INotifyPropertyChanged
     private bool _isJunction;
 
     #endregion
-    
+
     #region Property
 
     public LinkMode LinkMode
@@ -160,7 +159,7 @@ public class MainWindowViewModel: INotifyPropertyChanged
     }
 
     #endregion
-    
+
     #region PropertyChangedHandler
 
     public event PropertyChangedEventHandler? PropertyChanged;
