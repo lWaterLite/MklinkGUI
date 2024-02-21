@@ -4,6 +4,7 @@ using System.Text;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Shell;
 using OpenFileDialog = Microsoft.Win32.OpenFileDialog;
 using FolderBrowserDialog = System.Windows.Forms.FolderBrowserDialog;
 

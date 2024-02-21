@@ -20,9 +20,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Reference Include="FTCustomControlLibrary">
-            <HintPath>FTCustomControlLibrary.dll</HintPath>
-        </Reference>
+      <ProjectReference Include="..\..\WaterLiteCustomControlLibrary\WaterLiteCustomControlLibrary\WaterLiteCustomControlLibrary.csproj" />
     </ItemGroup>
 
 </Project>

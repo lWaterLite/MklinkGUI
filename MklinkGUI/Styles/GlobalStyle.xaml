@@ -3,12 +3,22 @@
 
     <FontFamily x:Key="IconFont">pack://application:,,,/Assets/#folktrigger</FontFamily>
 
-    <SolidColorBrush x:Key="ApplicationWindowChromeBackgroundBrush" Color="#202020" />
-    <SolidColorBrush x:Key="ApplicationContentBackgroundBrush" Color="#262626" />
-    <SolidColorBrush x:Key="ApplicationForegroundBrush" Color="White" />
+    <SolidColorBrush x:Key="WindowChrome.Static.Background" Color="#202020" />
+    <SolidColorBrush x:Key="WindowChrome.CloseButton.MouseOver.Background" Color="#e81123" />
+    <SolidColorBrush x:Key="WindowChrome.MinimizeButton.MouseOver.Background" Color="#454545" />
+    
+    <SolidColorBrush x:Key="Application.Static.Background" Color="#262626" />
+    <SolidColorBrush x:Key="Application.Static.Foreground" Color="White" />
+    
+    <SolidColorBrush x:Key="Element.Static.BorderBrush" Color="#999999" />
+    <SolidColorBrush x:Key="Element.Static.Background" Color="#2e2e2e" />
+    <SolidColorBrush x:Key="Element.MouseOver.Background" Color="#383838" />
+    <SolidColorBrush x:Key="Element.Static.Foreground" Color="#ffffff" />
+    <SolidColorBrush x:Key="Element.MouseOver.Foreground" Color="#3DF3FF" />
+    
 
     <Style TargetType="{x:Type TextBlock}">
         <Setter Property="FontFamily" Value="Microsoft Yahei" />
-        <Setter Property="Foreground" Value="{StaticResource ApplicationForegroundBrush}" />
+        <Setter Property="Foreground" Value="{StaticResource Application.Static.Foreground}" />
     </Style>
 </ResourceDictionary>

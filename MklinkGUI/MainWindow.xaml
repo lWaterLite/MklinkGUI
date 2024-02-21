@@ -4,16 +4,16 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MklinkGUI"
-        xmlns:ft="clr-namespace:FTCustomControlLibrary;assembly=FTCustomControlLibrary"
+        xmlns:ft="clr-namespace:WaterLiteCustomControlLibrary;assembly=WaterLiteCustomControlLibrary"
         mc:Ignorable="d"
-        ResizeMode="NoResize" Height="300" Width="800"
+        ResizeMode="NoResize" Width="800" Height="300"
         Title="MainWindow"
         DataContext="{DynamicResource MainWindowViewModel}">
 
     <WindowChrome.WindowChrome>
         <WindowChrome CaptionHeight="30"
                       CornerRadius="0"
-                      GlassFrameThickness="-1"
+                      GlassFrameThickness="1"
                       UseAeroCaptionButtons="False" />
     </WindowChrome.WindowChrome>
 
@@ -30,7 +30,7 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Grid Row="0" Background="{StaticResource ApplicationWindowChromeBackgroundBrush}">
+        <Grid Row="0" Background="{StaticResource WindowChrome.Static.Background}">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
@@ -75,7 +75,7 @@
             </Grid>
         </Grid>
 
-        <Border Grid.Row="1" Background="{StaticResource ApplicationContentBackgroundBrush}"
+        <Border Grid.Row="1" Background="{StaticResource Application.Static.Background}"
                 Padding="32 0">
             <Grid>
                 <Grid.RowDefinitions>
@@ -84,6 +84,7 @@
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
 
                 <Grid Grid.Row="0"
@@ -105,6 +106,7 @@
                     <Border Grid.Column="1"
                             Style="{StaticResource PathTextBorder}">
                         <TextBlock FontSize="16"
+                                   TextWrapping="WrapWithOverflow"
                                    Text="{Binding LinkPath}" />
                     </Border>
 
@@ -134,6 +136,7 @@
                     <Border Grid.Column="1"
                             Style="{StaticResource PathTextBorder}">
                         <TextBlock FontSize="16"
+                                   TextWrapping="WrapWithOverflow"
                                    Text="{Binding TargetPath}" />
                     </Border>
 
@@ -214,7 +217,7 @@
                 </Border>
 
                 <Button Grid.Row="4"
-                        Margin="0 12 0 0"
+                        Margin="0 12 0 12"
                         Style="{StaticResource ExecuteButton}"
                         Click="ExecuteMklinkButton"
                         Content="mklink" />
