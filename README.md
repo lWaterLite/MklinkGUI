@@ -1,6 +1,6 @@
 # MklinkGUI
 
-[![MklinkGUI](https://img.shields.io/badge/Mklink-%40lWaterLite-blue)](https://github.com/lWaterLite) ![.Net](https://img.shields.io/badge/.NET-8.0-green)
+[![MklinkGUI](https://img.shields.io/badge/Mklink-%40lWaterLite-blue)](https://github.com/lWaterLite) ![.Net](https://img.shields.io/badge/.NET-8.0-green) [![CN](https://img.shields.io/badge/CN-ZH-orange)](README.zh.md)
 
 MklinkGUI is a simple GUI for mklink command.
 
